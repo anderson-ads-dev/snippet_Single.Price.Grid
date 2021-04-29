@@ -1,8 +1,146 @@
 
-.attribution { 
-	font-size: 11px; text-align: center; 
+:root {
+	--Cyan: hsl(179, 62%, 43%);
+	--CyanLight: hsl(179, 50%, 51%);
+	--Yellow: hsl(71, 73%, 54%);
+	--YellowDark: hsl(71, 62%, 58%);
+	--Light_Gray: hsl(204, 43%, 93%);
+	--Grayish_Blue: hsl(218, 22%, 67%);
+
+	--Karla:'Karla', sans-serif;
 }
 
-.attribution a { 
-	color: hsl(228, 45%, 44%); 
+
+@media (max-width: 1080px){
+    html{
+        font-size: 93.75%;
+    }
+}
+@media (max-width: 720px){
+    html{
+        font-size: 87.5%;
+    }
+	
+}
+@media (max-width:450px){
+	.SPGDetails {
+		flex-direction: column;
+	}
+}
+
+
+.PoupUp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+
+}
+
+.SPG {
+	font-family: var(--Karla);	
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	margin: 0px;
+	overflow: hidden;
+
+	max-width: 45rem;
+	min-height: 30rem;
+
+	display: flex;
+	flex-direction: column;
+
+
+	
+}
+
+.SPGDescription {
+	background-color: white;
+	position: relative;
+	padding: 2rem;
+	padding-left: 3rem;
+}
+
+.SPGDescription h2 {
+	color: var(--Cyan);
+	font-weight: 800;
+	margin-top: 0;
+}
+.SPGDescription h3 {
+	color: var(--Yellow);
+	font-weight: 800;
+	margin-top: 2rem;
+	
+}
+.SPGDescription p {
+	color: var(--Grayish_Blue);
+	font-weight: 400;
+}
+
+.SPGDetails {
+	display: flex;
+	color: var(--Light_Gray);
+}
+
+.SPGSingUp {
+	background-color: var(--Cyan);
+	width: 100%;
+	padding: 2rem;
+}
+
+.SPGValue {
+	color: white;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+.SPGValue h3 {
+	font-weight: 800;
+	font-size: 200%;
+}
+
+.SPGSingUp p {
+	margin-top: 0.5rem;
+}
+
+.SPGTime {
+	opacity: 0.5;
+}
+
+.SPGExtra {
+	background-color: var(--CyanLight);
+	width: 100%;
+	padding: 2rem;
+	padding-left: 3rem;
+}
+
+.SPGExtra p{
+	margin: 0.4rem;
+}
+
+.SPGSingUpButton {
+	background-color: var(--Yellow);
+	color: var(--Light_Gray);
+	font-family: var(--Karla);
+	font-weight: bold;
+	font-size: 110%;
+
+	
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 2px 2px 15px -8px gray;
+	height: 3rem;
+
+	
+	position: static;
+	
+	width: 15rem;
+}
+
+.SPGSingUpButton:hover {
+	background-color: var(--YellowDark);
+	box-shadow: 2px 2px 15px  0px greenyellow;
+	transition: 0.5s;
 }
